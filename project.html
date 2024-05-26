@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><b style="color: white;">Tamal</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="project.html" style="color: white;">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: white;">About Me</a>
+          </li>
+          <li class="nav-item">
+            <button class="alert-button" onclick="showAlert()">Resume</button>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="content">
+
+
+
+    <div class="button-container" style="text-align: center; margin-top: 100px;">
+        <button onclick="showTable('table1')" type="button" class="btn btn-outline-success btn-lg">AI / Machine Learning</button>
+        <button onclick="showTable('table2')" type="button" class="btn btn-outline-success btn-lg">Web Development</button>
+    </div>
+
+    <p style="text-align: center; margin-top: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>Here are the projects that I have done</strong></p>
+
+
+
+
+
+    <!----------------------- table for machine learning ----------------------->
+
+
+
+
+    <table class="table table-hover" style="margin-top: 80px; border-radius: 10px; display: none;" id="table1">
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Source Code</th>
+            <th scope="col">Publication?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>sentiment and summarization of online product reviews
+            </td>
+            <td>I performed sentiment analysis and summarization of online product reviews in the Bangla language. For sentiment analysis, I used logistic regression and decision tree models, and also employed deep learning for better performance. For summarization, I implemented extractive summarization by calculating weights.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoproject1()">See Codes</button></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Soybean Leaves Disease Detection
+            </td>
+            <td>Here, I developed a Soybean Leaves Disease Detection model using transfer learning. The dataset includes images of healthy leaves, as well as leaves affected by Diabrotica speciosa and caterpillar diseases.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoproject2()">See Codes</button></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>FineTuning With LLM
+            </td>
+            <td>Here you can find some code examples and methods to fine-tune large language models (LLMs).</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoproject3()">See Codes</button></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>LangChain Chat With Your Data
+            </td>
+            <td>Here, you can explore the process of uploading PDFs or other text documents and leveraging large language models (LLMs) through LangChain, a framework designed for developing applications empowered by LLMs. This allows for engaging conversations with the uploaded data.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoproject4()">See Codes</button></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Some basic regression and classification models using tensorflow
+            </td>
+            <td>Explore basic regression and classification models crafted using TensorFlow, sourced directly from the official website, providing a hands-on approach to mastering machine learning concepts.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoproject5()">See Codes</button></td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+    </table>
+
+
+    <!------------------------ table for web development ------------------->
+    <table class="table table-hover" style="margin-top: 80px; border-radius: 10px; display: none;" id="table2">
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Source Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ecommerce Website Using Django</td>
+            <td>This is one of my earlier ecommerce website using html, CSS, JavaScript and for backend, I used Django.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoprojectWeb1()">See Codes</button></td>
+          </tr>
+          <tr>
+            <td>BD JOB HUNTER</td>
+            <td>
+                I've built a job seeker website with HTML, CSS, JavaScript, PHP, and MySQL. Users can create and upload CVs, while recruiters can search for candidates and contact them directly. The site includes authentication, notifications, and other useful features for an efficient job hunting experience.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoprojectWeb2()">See Codes</button></td>
+          </tr>
+          <tr>
+            <td>ReadRecent</td>
+            <td>
+                I've developed a website called ReadRecent using React.js. It provides access to recent news from various categories, offering users a convenient platform to stay updated on the latest happenings.</td>
+            <td><button class="redirect-button" onclick="redirectToPagetoprojectWeb3()">See Codes</button></td>
+          </tr>
+        </tbody>
+    </table>
+   
+
+
+  </div>
+
+  <!-- -----------------------------------footer ------------------------------>
+  <footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p style="color: aliceblue;">Email: <a href="mailto:tamalsarker534@gmail.com">tamalsarker534@gmail.com</a></p>
+            <p style="color: aliceblue;">LinkedIn: <a href="https://www.linkedin.com/in/tamal-kumar-sarker-4b574728b/" target="_blank">LinkedIn Profile</a></p>
+            <p style="color: aliceblue;">GitHub: <a href="https://github.com/TamalSarker777" target="_blank">GitHub Profile</a></p>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="project.html">Projects</a> 
+            <!-- <a href="#">Resume</a> -->
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/tamal-kumar-sarker-4b574728b/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/TamalSarker777" target="_blank">GitHub</a>
+            <a href="https://x.com/Tomal33?s=09" target="_blank">Twitter</a>
+            <a href="https://huggingface.co/TamalSarker777" target="_blank">Hugging face</a>
+            <a href="https://www.kaggle.com/tamalsarker" target="_blank">kaggle</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 Tamal Sarker. All rights reserved.</p>
+        </div>
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+
+</html>

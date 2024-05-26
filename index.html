@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b style="color: white;">Tamal</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="project.html" style="color: white;">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: white;">About Me</a>
+          </li>
+          <li class="nav-item">
+            <button class="alert-button" onclick="showAlert()">Resume</button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="content">
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-center introduction">
+      <div class="p-2 bd-highlight bio">
+        <b style="font-style: initial;">I am </b><br>
+        <b style="font-size: 30px; font-style: oblique;">Tamal Sarker</b>
+        <p>
+          I am a developer specializing in Machine Learning and Web Development, dedicated to transforming data into
+          actionable insights and creating dynamic, user-friendly applications.
+        </p>
+        <!-- <button type="button" class="btn btn-success">Projects</button> -->
+        <button onclick="location.href='project.html'" class="animated-button">Projects</button>
+      
+      </div>
+      <div class="p-2 bd-highlight my_image">
+        <img src="mypic.png" class="img-fluid rounded"alt="Image not found" style="width: 620px;">
+      </div>
+    </div>
+
+
+
+  <!------------------------------ Another section -------------------------->
+<!-- --------------------------- Area Of Interest --------------------------->
+
+
+
+  <div class="Area_of_interest" id="animatedBox">
+    <div style="text-align: center;">
+      <p style="font-size: 30px; margin-top: 170px; font-style: oblique;"><b style="color: rgb(36, 91, 139);">Area of Interest</b></p>
+      <p style="opacity: 0.7; font-style: italic; margin-bottom: 70px;">Take a look of some of the things I love working on</p>
+    </div>
+
+    <div class="d-flex flex-row bd-highlight mb-3 d-flex justify-content-around box1">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight img-area-interest" id="interest_animation">
+          
+          <img src="ml.jpg" class="img-thumbnail" alt="Image not found">
+          <p><b>Machine Learning</b></p>
+          <p style="opacity: 0.7; font-style: italic;">Machine learning is a field of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed by utilizing algorithms to identify patterns and make decisions based on data.</p>
+        
+        </div>
+  
+
+        <div class="p-2 bd-highlight img-area-interest" id="interest_animation">
+          <!-- NLP -->
+          <img src="nlp.png" class="img-thumbnail" alt="Image not found" >
+          <p><b>Natural Language Processing</b></p>
+          <p style="opacity: 0.7; font-style: italic;">Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and humans through natural language, enabling machines to understand, interpret, and generate human language.</p>
+        </div>
+        <div class="p-2 bd-highlight img-area-interest" id="interest_animation">
+          <!-- Computer Vision  -->
+          <img src="computer_vision.png" class="img-thumbnail" alt="Image not found">
+          <p><b>Computer Vision</b></p>
+          <p style="opacity: 0.7; font-style: italic;">Computer Vision is a field of artificial intelligence that enables machines to interpret and make decisions based on visual data, such as images and videos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row bd-highlight mb-3 d-flex justify-content-around">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight img-area-interest" id="interest_animation">
+          <!-- Generative Ai -->
+          <img src="Generative Ai.png" class="img-thumbnail" alt="Image not found">
+          <p><b>Generative Ai</b></p>
+          <p style="opacity: 0.7; font-style: italic;">Generative AI is a branch of artificial intelligence that focuses on creating models capable of generating new content, such as text, images, or music, that is often indistinguishable from human-created content.</p>
+        </div>
+        <div class="p-2 bd-highlight img-area-interest" id="interest_animation">
+          <!-- Model Deplopment -->
+          <img src="deployment.png" class="img-thumbnail" alt="Image not found">
+          <p><b>Model Deplopment</b></p>
+          <p style="opacity: 0.7; font-style: italic;">Model deployment is the process of integrating a trained machine learning model into a production environment to make predictions or provide insights based on new data.</p>
+        </div>
+        <div class="p-2 bd-highlight img-area-interest" id="interest_animation">
+          <!-- Web Development  -->
+          <img src="wd.png" class="img-thumbnail" alt="Image not found">
+          <p><b>Web Development</b></p>
+          <p style="opacity: 0.7; font-style: italic;">Web development encompasses the creation and maintenance of websites and web applications, involving tasks such as coding, designing, and deploying web-based solutions to meet various needs and objectives.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+<!---------------- Another section called latest project ----------------->
+<!----------------------- Latest Project Show ---------------------------->
+
+
+
+
+
+  <div class="latest_project">
+    <p><b style="font-size: 30px; font-style: italic;">My Latest Project</b></p>
+    <p style="opacity: 0.7; font-style: italic; margin-bottom: 80px;">Take a look at my recent work</p>
+
+    <div class="d-flex flex-row justify-content-around">
+      <div class="p-2" id="project_animation">
+        <div class="card" style="width: 18rem;">
+          <img src="django.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Basic Ecommerce Website</h5>
+            <p class="card-text">I developed my first e-commerce website using Django, incorporating Bootstrap for styling, along with CSS, HTML, and JavaScript.</p>
+            <a href="https://github.com/TamalSarker777/Ecommerce_Website_Using_Django" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-2" id="project_animation">
+        <div class="card" style="width: 18rem;">
+          <img src="nlp.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sentiment analysis and summarization </h5>
+            <p class="card-text">I performed sentiment analysis and summarization of online product reviews in the Bangla language. For sentiment analysis, I used logistic regression and decision tree models, and also employed deep learning for better performance. For summarization, I implemented extractive summarization by calculating weights.</p>
+            <a href="https://github.com/TamalSarker777/sentiment-and-summarization-of-online-product-reviews" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-2" id="project_animation">
+        <div class="card" style="width: 18rem;">
+          <img src="llm.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fine Tuning with LLM</h5>
+            <p class="card-text">Here you can find some code examples and methods to fine-tune large language models (LLMs).</p>
+            <a href="https://github.com/TamalSarker777/Fine-Tuning-With-LLM" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- -----------------------------------footer ------------------------------>
+  <footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p style="color: aliceblue;">Email: <a href="mailto:tamalsarker534@gmail.com">tamalsarker534@gmail.com</a></p>
+            <p style="color: aliceblue;">LinkedIn: <a href="https://www.linkedin.com/in/tamal-kumar-sarker-4b574728b/" target="_blank">LinkedIn Profile</a></p>
+            <p style="color: aliceblue;">GitHub: <a href="https://github.com/TamalSarker777" target="_blank">GitHub Profile</a></p>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="project.html">Projects</a> 
+            <!-- <a href="#" >Resume</a> -->
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/tamal-kumar-sarker-4b574728b/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/TamalSarker777" target="_blank">GitHub</a>
+            <a href="https://x.com/Tomal33?s=09" target="_blank">Twitter</a>
+            <a href="https://huggingface.co/TamalSarker777" target="_blank">Hugging face</a>
+            <a href="https://www.kaggle.com/tamalsarker" target="_blank">kaggle</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 Tamal Sarker. All rights reserved.</p>
+        </div>
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+    </div>
+</footer>
+
+
+  </div>
+
+
+  <!-- ............................................................................. -->
+
+
+</body>
+
+</html>
